@@ -134,7 +134,7 @@ export default function MainCard() {
       <h1 className="text">
         Start with <strong>HTML, CSS & JavaScript</strong>
       </h1>
-      <Grid container style={{ maxWidth: "100%" }} spacing={3}>
+      <Grid container wrap='wrap' style={{ maxWidth: "100%" }} spacing='auto'>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader

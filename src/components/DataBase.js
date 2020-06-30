@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
+import { Button, Segment } from "semantic-ui-react";
 import {
   Card,
   CardHeader,
@@ -12,8 +13,9 @@ import {
   IconButton,
   Typography,
   Grid,
-  Button,
-  FormGroup, FormControlLabel, Checkbox
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
 } from "@material-ui/core";
 import { blue, yellow, green } from "@material-ui/core/colors";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -21,14 +23,12 @@ import StarIcon from "@material-ui/icons/Star";
 import { GrMysql } from "react-icons/gr";
 import { DiPostgresql } from "react-icons/di";
 import { DiMongodb } from "react-icons/di";
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
+import Favorite from "@material-ui/icons/Favorite";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 305,
-    justifyContent: "center",
-    alignItems: "center",
   },
   media: {
     height: 0,
@@ -47,12 +47,12 @@ const useStyles = makeStyles((theme) => ({
   sql: {
     backgroundColor: blue[400],
   },
-  post:{
-    backgroundColor : yellow[500],
-    color : 'black'
+  post: {
+    backgroundColor: yellow[500],
+    color: "black",
   },
-  mon:{
-    backgroundColor : green[500]
+  mon: {
+    backgroundColor: green[500],
   },
   text: {
     textAlign: "center",
@@ -60,9 +60,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const mysql_key = 'mysqlLike'
-const mongo_key = 'mongoLike'
-const post_key = 'postgres_like'
+const mysql_key = "mysqlLike";
+const mongo_key = "mongoLike";
+const post_key = "postgres_like";
 
 export default function DataBase() {
   const classes = useStyles();
@@ -71,57 +71,57 @@ export default function DataBase() {
   const [mongoExpanded, setMongoExpanded] = useState(false);
   const [postExpanded, setPostExpanded] = useState(false);
 
-  const [mysqlLike, setMysqlLike] = useState(false)
-  const [mongoLike, setMongoLike] = useState(false)
-  const [postLike, setPostLike] = useState(false)
+  const [mysqlLike, setMysqlLike] = useState(false);
+  const [mongoLike, setMongoLike] = useState(false);
+  const [postLike, setPostLike] = useState(false);
 
   // MYSQL Like
   const handleMysqlLike = (event) => {
-    setMysqlLike(event.target.checked)
-  }
+    setMysqlLike(event.target.checked);
+  };
 
   useEffect(() => {
-    const store_sqlLike = JSON.parse(localStorage.getItem(mysql_key))
-    if(store_sqlLike){
-      setMysqlLike(store_sqlLike)
+    const store_sqlLike = JSON.parse(localStorage.getItem(mysql_key));
+    if (store_sqlLike) {
+      setMysqlLike(store_sqlLike);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem(mysql_key, JSON.stringify(mysqlLike))
-  })
- 
+    localStorage.setItem(mysql_key, JSON.stringify(mysqlLike));
+  });
+
   // MONGO LIKE
   const handleMongoLike = (event) => {
-    setMongoLike(event.target.checked)
-  }
+    setMongoLike(event.target.checked);
+  };
 
   useEffect(() => {
-    const store_mongoLike = JSON.parse(localStorage.getItem(mongo_key))
-    if(store_mongoLike){
-      setMongoLike(store_mongoLike)
+    const store_mongoLike = JSON.parse(localStorage.getItem(mongo_key));
+    if (store_mongoLike) {
+      setMongoLike(store_mongoLike);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem(mongo_key, JSON.stringify(mongoLike))
-  })
+    localStorage.setItem(mongo_key, JSON.stringify(mongoLike));
+  });
 
-  // POSTGRESQL LIKE 
+  // POSTGRESQL LIKE
   const handlePostLike = (event) => {
-    setPostLike(event.target.checked)
-  }
+    setPostLike(event.target.checked);
+  };
 
   useEffect(() => {
-    const store_postLike = JSON.parse(localStorage.getItem(post_key))
-    if(store_postLike){
-      setPostLike(store_postLike)
+    const store_postLike = JSON.parse(localStorage.getItem(post_key));
+    if (store_postLike) {
+      setPostLike(store_postLike);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem(post_key, JSON.stringify(postLike))
-  })
+    localStorage.setItem(post_key, JSON.stringify(postLike));
+  });
 
   const handleMysqlExpandClick = () => {
     setMysqlExpanded(!mysqlExpanded);
@@ -134,11 +134,9 @@ export default function DataBase() {
   };
 
   return (
-    <div className='database' >
-      <h1 className='database-text'>
-        Databases
-      </h1>
-      <Grid container style={{maxWidth : '100%'}} spacing={3}>
+    <div className="database">
+      <h1 className="database-text">Databases</h1>
+      <Grid container style={{ maxWidth: "100%" }} spacing='auto'>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -171,7 +169,7 @@ export default function DataBase() {
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-            <FormGroup row>
+              <FormGroup row>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -229,12 +227,15 @@ export default function DataBase() {
                     <li>Twitter.</li>
                     <li>Amazon.</li>
                   </ul>
-                  <br/><hr/>
+                  <br />
+                  <hr />
                   Watch a video tutorial !!
                   <br />
-                  <Button href="" target="_blank" color='primary' variant="outlined">
-                    Learn MySql
-                  </Button>
+                  <Segment inverted>
+                    <Button target="_blank" href="https://www.youtube.com/watch?v=HXV3zeQKqGY&t=3537s" inverted color="purple">
+                      Learn Mysql
+                    </Button>
+                  </Segment>
                 </Typography>
               </CardContent>
             </Collapse>
@@ -272,7 +273,7 @@ export default function DataBase() {
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-            <FormGroup row>
+              <FormGroup row>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -330,12 +331,20 @@ export default function DataBase() {
                     <li>Netflix.</li>
                     <li>reddit.</li>
                   </ul>
-                  <br/><hr/>
+                  <br />
+                  <hr />
                   Watch a video tutorial !!
                   <br />
-                  <Button href="https://www.youtube.com/watch?v=qw--VYLpxG4" target="_blank" variant="contained" color='primary'>
-                    Learn PostGreSQL
-                  </Button>
+                  <Segment inverted>
+                    <Button
+                      target="_blank"
+                      href="https://www.youtube.com/watch?v=qw--VYLpxG4"
+                      inverted
+                      color="blue"
+                    >
+                      Learn PostgreSQL
+                    </Button>
+                  </Segment>
                 </Typography>
               </CardContent>
             </Collapse>
@@ -365,13 +374,15 @@ export default function DataBase() {
             />
             <CardContent>
               <Typography variant="body2" color="textPrimary" component="p">
-              MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
+                MongoDB is a cross-platform document-oriented database program.
+                Classified as a NoSQL database program, MongoDB uses JSON-like
+                documents with optional schemas.
                 <br />
                 <strong>Created by: MongoDB Inc</strong>
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-            <FormGroup row>
+              <FormGroup row>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -401,10 +412,18 @@ export default function DataBase() {
                   <strong>About:</strong>
                 </Typography>
                 <Typography paragraph>
-                MongoDB supports field, range query, and regular-expression searches. Queries can return specific fields of documents and also include user-defined JavaScript functions. Queries can also be configured to return a random sample of results of a given size.
+                  MongoDB supports field, range query, and regular-expression
+                  searches. Queries can return specific fields of documents and
+                  also include user-defined JavaScript functions. Queries can
+                  also be configured to return a random sample of results of a
+                  given size.
                 </Typography>
                 <Typography paragraph>
-                MongoDB provides high availability with replica sets.[10] A replica set consists of two or more copies of the data. Each replica-set member may act in the role of primary or secondary replica at any time. All writes and reads are done on the primary replica by default.
+                  MongoDB provides high availability with replica sets.[10] A
+                  replica set consists of two or more copies of the data. Each
+                  replica-set member may act in the role of primary or secondary
+                  replica at any time. All writes and reads are done on the
+                  primary replica by default.
                   <a
                     href="https://docs.mongodb.com/manual/introduction/"
                     target="_blank"
@@ -422,12 +441,20 @@ export default function DataBase() {
                     <li>SAP.</li>
                     <li>PayPal.</li>
                   </ul>
-                  <br/><hr/>
+                  <br />
+                  <hr />
                   Watch a video tutorial !!
                   <br />
-                  <Button href="https://www.youtube.com/watch?v=pWbMrx5rVBE" target="_blank" style={{color:'white', backgroundColor:'lightgreen'}}>
-                    Learn MongoDb
-                  </Button>
+                  <Segment inverted>
+                    <Button
+                      target="_blank"
+                      href="https://www.youtube.com/watch?v=pWbMrx5rVBE"
+                      inverted
+                      color="green"
+                    >
+                      Learn MongoDb
+                    </Button>
+                  </Segment>
                 </Typography>
               </CardContent>
             </Collapse>

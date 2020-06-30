@@ -29,8 +29,7 @@ import { IoLogoJavascript } from "react-icons/io";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 305,
-    justifyContent: "center",
-    alignItems: "center",
+
   },
   media: {
     height: 0,
@@ -115,7 +114,7 @@ export default function BackFrameCard() {
       <h4 style={{ textAlign: "center", alignItems: "center", color: "blue" }}>
         (First learn <strong>Node.js</strong> then <strong>Express</strong>)
       </h4>
-      <Grid container style={{ maxWidth: "100%" }} spacing={3}>
+      <Grid container style={{ maxWidth: "100%" }} spacing='auto'>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader

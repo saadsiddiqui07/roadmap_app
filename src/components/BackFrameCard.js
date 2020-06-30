@@ -29,8 +29,6 @@ import {GiChiliPepper} from 'react-icons/gi'
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 305,
-    justifyContent: "center",
-    alignItems: "center",
   },
   media: {
     height: 0,
@@ -116,7 +114,7 @@ export default function BackFrameCard() {
     <div className='backcard'>
       <h1 className='back-text'>Python Back-End Frameworks</h1>
       <h4 style={{ textAlign: "center", color: "green" }}>(Pick one)</h4>
-      <Grid container style={{maxWidth : '100%'}} spacing={3}>
+      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader

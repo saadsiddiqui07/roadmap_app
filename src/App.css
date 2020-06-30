@@ -1,9 +1,11 @@
-.App{
-  align-items: center;
+body{
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
-
-
 .text{
   justify-content: center;
   text-align: center;

@@ -28,8 +28,7 @@ import {FaVuejs} from 'react-icons/fa'
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 305,
-    justifyContent: "center",
-    alignItems: "center",
+
   },
   media: {
     height: 0,
@@ -137,7 +136,7 @@ export default function FrameCard() {
       <h1 className="frame-text">Frameworks</h1>
       <h2 style={{ textAlign: "center" }}>JavaScript Front-End Frameworks</h2>
       <h4 style={{textAlign:'center', color:'darkblue'}}>(Pick one)</h4>
-      <Grid container style={{maxWidth : '100%'}} spacing={3}>
+      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader

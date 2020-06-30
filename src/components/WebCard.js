@@ -57,10 +57,10 @@ export default function WebCard() {
                 <strong>So what are you waiting for?</strong> <br/>
                 Learn the best picked languages to become a full stack develper.               
             </Typography> 
-            <Typography variant='h3'>
+            <Typography variant='h4'>
                     <StarIcon style={{ color: "orange" }} /> -- Highly recommended.
             </Typography> 
-            <Typography variant='h3'>
+            <Typography variant='h4'>
                     <StarIcon style={{ color: "royalblue" }} /> -- Must learn.
             </Typography> 
           </Typography>

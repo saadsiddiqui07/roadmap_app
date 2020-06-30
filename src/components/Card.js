@@ -29,8 +29,7 @@ import CodeIcon from "@material-ui/icons/Code";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 305,
-    justifyContent: "center",
-    alignItems: "center",
+
   },
   media: {
     height: 0,
@@ -106,9 +105,9 @@ export default function LanguageReviewCard() {
   };
 
   return (
-    <div className="card"z>
+    <div className="card">
       <h1 className="main-text">Top Languages</h1>
-      <Grid container style={{maxWidth : '100%'}} spacing={3}>
+      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
