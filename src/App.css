@@ -1,0 +1,42 @@
+.App{
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text{
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.main-text{
+  padding-top: 5%;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.frame-text{
+  padding-top: 5%;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.back-text{
+  padding-top: 5%;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.database-text{
+  padding-top: 5%;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
