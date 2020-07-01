@@ -60,9 +60,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const mysql_key = "mysqlLike";
 const mongo_key = "mongoLike";
 const post_key = "postgres_like";
+
+//   DATABASES
 
 export default function DataBase() {
   const classes = useStyles();

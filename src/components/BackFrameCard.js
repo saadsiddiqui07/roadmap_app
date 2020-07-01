@@ -56,8 +56,12 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const dj_key = 'djangoLike'
 const flask_key = 'flaskLike'
+
+// PYTHON BACK-END FRAMEWORKS
 
 export default function BackFrameCard() {
   const classes = useStyles();

@@ -53,6 +53,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const local_key = "python_like";
 const localKey = "js_like";
 

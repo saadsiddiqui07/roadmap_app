@@ -56,8 +56,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const node_key = "nodeLike";
 const exp_key = "expLike";
+
+// JAVASCRIPT BACK-END FRAMEWORKS
 
 export default function BackFrameCard() {
   const classes = useStyles();

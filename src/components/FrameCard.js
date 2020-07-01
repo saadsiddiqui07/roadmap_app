@@ -58,9 +58,13 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const react_key = 'reactLike'
 const angular_key = 'angularLike'
 const vue_key = 'vueLike'
+
+// FRONT-END FRAMEWORKS
  
 export default function FrameCard() {
   const classes = useStyles();

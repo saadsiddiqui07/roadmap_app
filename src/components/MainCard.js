@@ -58,9 +58,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// KEYS FOR LOCALSTORAGE
+
 const html_key = "htmlLike";
 const css_key = "cssLike";
 const js_key = "jsLike";
+
+// HTML, CSS AND JS
 
 export default function MainCard() {
   const classes = useStyles();
