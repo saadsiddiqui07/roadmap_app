@@ -136,7 +136,7 @@ export default function FrameCard() {
       <h1 className="frame-text">Frameworks</h1>
       <h2 style={{ textAlign: "center" }}>JavaScript Front-End Frameworks</h2>
       <h4 style={{textAlign:'center', color:'darkblue'}}>(Pick one)</h4>
-      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
+      <Grid container style={{maxWidth : '100%'}} spacing={3}>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -454,7 +454,6 @@ export default function FrameCard() {
           </Card>
         </Grid>
       </Grid>
-      <hr />
     </div>
   );
 }

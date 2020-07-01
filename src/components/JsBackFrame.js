@@ -114,7 +114,7 @@ export default function BackFrameCard() {
       <h4 style={{ textAlign: "center", alignItems: "center", color: "blue" }}>
         (First learn <strong>Node.js</strong> then <strong>Express</strong>)
       </h4>
-      <Grid container style={{ maxWidth: "100%" }} spacing='auto'>
+      <Grid container style={{ maxWidth: "100%" }} spacing={4}>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -333,7 +333,6 @@ export default function BackFrameCard() {
         </Grid>
       </Grid>
       <br />
-      <hr />
     </div>
   );
 }

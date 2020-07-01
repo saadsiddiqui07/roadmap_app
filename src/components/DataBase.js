@@ -136,7 +136,7 @@ export default function DataBase() {
   return (
     <div className="database">
       <h1 className="database-text">Databases</h1>
-      <Grid container style={{ maxWidth: "100%" }} spacing='auto'>
+      <Grid container style={{ maxWidth: "100%" }} spacing={3}>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader

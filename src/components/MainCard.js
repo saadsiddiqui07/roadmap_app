@@ -25,7 +25,6 @@ import { DiJavascript } from "react-icons/di";
 import StarIcon from "@material-ui/icons/Star";
 import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
 import Favorite from "@material-ui/icons/Favorite";
-import WebCard from "./WebCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -130,11 +129,11 @@ export default function MainCard() {
 
   return (
     <div className="maincard">
-      <WebCard />
+      <br/>
       <h1 className="text">
         Start with <strong>HTML, CSS & JavaScript</strong>
       </h1>
-      <Grid container wrap='wrap' style={{ maxWidth: "100%" }} spacing='auto'>
+      <Grid container  style={{ maxWidth: "100%" }} spacing={3}>
         <Grid item xs={12} sm={4}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -451,7 +450,6 @@ export default function MainCard() {
           </Card>
         </Grid>
       </Grid>
-      <hr />
     </div>
   );
 }

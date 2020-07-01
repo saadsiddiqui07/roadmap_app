@@ -107,7 +107,7 @@ export default function LanguageReviewCard() {
   return (
     <div className="card">
       <h1 className="main-text">Top Languages</h1>
-      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
+      <Grid container style={{maxWidth : '100%'}} spacing={4}>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -330,7 +330,6 @@ export default function LanguageReviewCard() {
           </Card>
         </Grid>
       </Grid>
-      <hr />
     </div>
   );
 }

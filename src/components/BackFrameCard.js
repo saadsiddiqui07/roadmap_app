@@ -114,7 +114,7 @@ export default function BackFrameCard() {
     <div className='backcard'>
       <h1 className='back-text'>Python Back-End Frameworks</h1>
       <h4 style={{ textAlign: "center", color: "green" }}>(Pick one)</h4>
-      <Grid container style={{maxWidth : '100%'}} spacing='auto'>
+      <Grid container style={{maxWidth : '100%'}} spacing={4}>
         <Grid item xs={12} sm={6}>
           <Card style={{ margin: "0 auto" }} className={classes.root}>
             <CardHeader
@@ -323,7 +323,6 @@ export default function BackFrameCard() {
           </Card>
         </Grid>
       </Grid>
-      <br/>
     </div>
     
   );

@@ -28,7 +28,7 @@ export default function WebCard() {
 
   return (
     <div className={classes.root}>
-      <ExpansionPanel style={{ backgroundColor: "lightgray" }}>
+      <ExpansionPanel style={{ backgroundColor: "lightgray", maxWidth:'100%' }}>
         <ExpansionPanelSummary
           expandIcon={<FcExpand />}
           aria-controls="panel1a-content"
@@ -63,6 +63,12 @@ export default function WebCard() {
             <Typography variant='h4'>
                     <StarIcon style={{ color: "royalblue" }} /> -- Must learn.
             </Typography> 
+            <br/>
+            <Typography paragraph>
+              <strong>For complete guide </strong> --- <a rel="noopener noreferrer" target='_blank' href='https://roadmap.sh'>Developer Roadmaps</a>
+              <br/>
+              
+            </Typography>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

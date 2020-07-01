@@ -1,10 +1,13 @@
-body{
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.App{
+  box-sizing: border-box;
+  position: absolute;
   max-width: 100%;
-  padding-left: 0%;
-  padding-right: 0%;
+  background-color: rgb(235, 240, 240);
+  
+}
+
+.card{
+  padding-left: 4%;
 }
 .text{
   justify-content: center;
